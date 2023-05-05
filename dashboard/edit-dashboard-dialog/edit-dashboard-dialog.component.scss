@@ -1,0 +1,23 @@
+.example-full-width {
+  width: 100%;
+}
+.close-btn {
+  float: left;
+}
+.add-btn {
+  float: right;
+}
+.select
+{
+  width: 480px;
+}
+.panel{
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+}
+.add-panel{height: 55px;}
+.icon{
+ font-size: small;
+}
+

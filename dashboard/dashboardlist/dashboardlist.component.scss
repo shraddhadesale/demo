@@ -1,0 +1,63 @@
+.btn {
+  float: right;
+  margin-left: 15px;
+}
+
+.main {
+  padding: 1% 1%;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.heading {
+  display: flex;
+  gap: 10px;
+}
+.heading h1 {
+  font-weight: 900;
+}
+.heading h2 {
+  font-weight: 800;
+  color: grey;
+}
+.dashbtn {
+  display: flex;
+  gap: 16px;
+}
+.example-headers-align .mat-expansion-panel-header-description {
+  justify-content: space-between;
+  align-items: center;
+}
+.dash-img{
+  width: auto;
+  background-image: url("../../../assets/images/dashboard-img.jpg.png");
+  background-size:contain;
+  background-repeat: no-repeat;
+  height: 400px;
+  // width: 90%;
+}
+.btoggel{
+  width: auto;
+  font-size: 16px;
+  padding-left : 20px;
+border-color: #ffffff;
+height: 90%;
+}
+.tcolor
+{
+  color: rgb(138, 136, 136);
+}
+mat-button-toggle:hover {
+  color: blue;
+}
+.header{
+  display: flex;
+  // gap: 25px;
+  height: 90%;
+}
+::ng-deep .mat-button-toggle-checked .mat-button-toggle-label-content {
+  color: blue;
+}

@@ -1,0 +1,201 @@
+<h2 mat-dialog-title>
+  Add Company
+  <button
+    mat-icon-button
+    style="float: right; margin: 5px 5px"
+    mat-dialog-close
+  >
+    <mat-icon>close</mat-icon>
+  </button>
+</h2>
+
+<mat-dialog-content>
+  <mat-tab-group >
+    <mat-tab label="Essentials">
+<div class="flex">
+  <form class="example-full-width1">
+    <mat-label>Company</mat-label>
+
+   <mat-form-field appearance="outline" class="example-full-width">
+
+     <input matInput type="text" class="inputwd" /> </mat-form-field
+   ><br />
+   <mat-label>Website</mat-label>
+   <mat-form-field appearance="outline" class="example-full-width">
+
+     <input matInput type="text" class="inputwd" /> </mat-form-field
+   ><br />
+   <mat-label>Email</mat-label>
+   <mat-form-field appearance="outline" class="example-full-width">
+
+     <input matInput type="text" class="inputwd" /> </mat-form-field
+   ><br />
+   <mat-label>Industry</mat-label>
+   <mat-form-field appearance="outline" class="example-full-width">
+
+     <mat-select class="inputwd">
+       <mat-option value="one">First option</mat-option>
+       <mat-option value="two">Second option</mat-option>
+     </mat-select> </mat-form-field
+   ><br />
+   <mat-label>Phone</mat-label>
+   <mat-form-field appearance="outline" class="example-full-width">
+
+     <input matInput type="number" class="inputwd" />
+   </mat-form-field>
+   <br />
+   <mat-label>Fax</mat-label>
+   <mat-form-field appearance="outline" class="example-full-width">
+
+     <input matInput type="number" class="inputwd" />
+   </mat-form-field>
+ </form>
+  <div id="user">
+    <img
+      src="https://twa-prod.teamwork.com/tko/public/legacy/images/no_clogo2.png"
+      alt=""
+      class="userimg"
+    />
+    <br>
+    <button mat-button color="primary">Edit</button>
+  </div>
+</div>
+
+
+
+      <!-- <mat-grid-list cols="4" rowHeight="3:3">
+        <mat-grid-tile colspan="3.3" rowspan="3.5">
+          <form >
+             <mat-label>Company</mat-label>
+            <mat-form-field appearance="outline" class="example-full-width">
+
+              <input matInput type="text" class="inputwd" appearance="outline"/> </mat-form-field
+            ><br />
+            <mat-label>Website</mat-label>
+            <mat-form-field appearance="outline" class="example-full-width">
+
+              <input matInput type="text" class="inputwd" /> </mat-form-field
+            ><br />
+            <mat-label>Email</mat-label>
+            <mat-form-field appearance="outline" class="example-full-width">
+
+              <input matInput type="text" class="inputwd" /> </mat-form-field
+            ><br />
+            <mat-label>Industry</mat-label>
+            <mat-form-field appearance="outline" class="example-full-width">
+
+              <mat-select class="inputwd">
+                <mat-option value="one">First option</mat-option>
+                <mat-option value="two">Second option</mat-option>
+              </mat-select> </mat-form-field
+            ><br />
+            <mat-label>Phone</mat-label>
+            <mat-form-field appearance="outline" class="example-full-width">
+
+              <input matInput type="number" class="inputwd" />
+            </mat-form-field>
+            <br />
+            <mat-label>Fax</mat-label>
+            <mat-form-field appearance="outline" class="example-full-width">
+
+              <input matInput type="number" class="inputwd" />
+            </mat-form-field>
+          </form>
+        </mat-grid-tile>
+        <mat-grid-tile rowspan="0.8">
+          <div id="user">
+            <img
+              src="https://twa-prod.teamwork.com/tko/public/legacy/images/no_clogo2.png"
+              alt=""
+              class="userimg"
+            />
+            <button mat-button color="primary">Edit</button>
+          </div>
+        </mat-grid-tile>
+      </mat-grid-list> -->
+      <br />
+
+    </mat-tab>
+    <mat-tab label="Address">
+      <div id="addcompanyform"  class="example-full-width1">
+        <mat-label>Line 1</mat-label>
+        <mat-form-field appearance="outline" class="example-full-width">
+
+          <input matInput type="text" class="inputwd" /> </mat-form-field
+        ><br />
+        <mat-label>Line 2</mat-label>
+        <mat-form-field appearance="outline" class="example-full-width">
+
+          <input matInput type="text" class="inputwd" /> </mat-form-field
+        ><br />
+        <mat-label>City</mat-label>
+        <mat-form-field appearance="outline" class="example-full-width">
+
+          <input matInput type="text" class="inputwd" /> </mat-form-field
+        ><br />
+        <mat-label>State/County</mat-label>
+        <mat-form-field appearance="outline" class="example-full-width">
+
+          <input matInput type="text" class="inputwd" /> </mat-form-field
+        ><br />
+        <mat-label>Zip/Post Code</mat-label>
+        <mat-form-field appearance="outline" class="example-full-width">
+
+          <input matInput type="text" class="inputwd" /> </mat-form-field
+        ><br />
+        <mat-label>Country</mat-label>
+        <mat-form-field appearance="outline" class="example-full-width">
+
+          <mat-select class="inputwd">
+            <mat-option value="one">First option</mat-option>
+            <mat-option value="two">Second option</mat-option>
+          </mat-select> </mat-form-field
+        ><br />
+      </div>
+
+    </mat-tab>
+    <mat-tab label="Profile">
+      <div id="addcompanyform">
+        <form class="example-form">
+          <mat-label>Public Profile</mat-label>
+          <mat-form-field class="example-full-width" appearance="outline">
+
+            <textarea matInput ></textarea>
+          </mat-form-field>
+        </form>
+      </div>
+
+    </mat-tab>
+    <mat-tab label="Notes">
+      <div id="addcompanyform">
+        <form class="example-form">
+          <mat-label>Private Note</mat-label>
+          <mat-form-field appearance="outline" class="example-full-width">
+
+            <textarea matInput ></textarea>
+          </mat-form-field>
+        </form>
+      </div>
+
+    </mat-tab>
+  </mat-tab-group>
+
+  <div class="example-button-row">
+    <button
+      id="closebtn"
+      routerLink="/companylist"
+      mat-raised-button
+      mat-dialog-close
+    >
+      Close
+    </button>
+    <button
+      id="addbtn"
+      mat-raised-button
+      color="primary"
+      [routerLink]="['/companylist']"
+    >
+      Add Company
+    </button>
+  </div>
+</mat-dialog-content>

@@ -1,0 +1,365 @@
+<<<<<<< HEAD
+
+<div class="header">
+  <h1>People</h1>
+
+  <mat-button-toggle-group class="btoggel" >
+    <mat-button-toggle value="companies" class="tcolor"  routerLink="/companylist"  checked>Companies</mat-button-toggle >
+      <mat-button-toggle value="people" class="tcolor" routerLink="/projectlist">People</mat-button-toggle >
+        <mat-button-toggle value="team" class="tcolor" routerLink="/team">Teams </mat-button-toggle >
+          <mat-button-toggle value="statuses" class="tcolor" routerLink="/">Statuses </mat-button-toggle >
+  </mat-button-toggle-group>
+  </div>
+  <div>
+    <div class="flex">
+      <h1>Companies</h1>
+      <div>
+        <button mat-button [matMenuTriggerFor]="menu">
+          <mat-icon>table_view</mat-icon>
+          Table
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>
+            <button mat-raised-button>
+              <mat-icon>table_view</mat-icon>
+              Table
+            </button>
+          </button>
+          <button mat-menu-item>
+            <button mat-raised-button>
+              <mat-icon>grid_view</mat-icon>
+              Grid
+            </button>
+          </button>
+        </mat-menu>
+        <button mat-icon-button>
+          <mat-icon>filter_list</mat-icon>
+        </button>
+        <button mat-raised-button color="primary" (click)="openDialog()">
+          <mat-icon>add</mat-icon>Add Company
+        </button>
+      </div>
+    </div>
+    <input type="search" class="inputfield" placeholder="Quick Search" />
+    &nbsp;
+    <small>String with <a href="">any character</a></small>
+
+    <br /><br />
+
+
+
+
+
+  <div class="example-table-container">
+    <table
+    mat-table
+    [dataSource]="dataSources"
+    matSort
+    (matSortChange)="announceSortChange($event)"
+    class="mat-elevation-z8"  >
+    <ng-container matColumnDef="name" >
+      <th
+        mat-header-cell
+        *matHeaderCellDef
+        mat-sort-header
+        sortActionDescription="name"
+      >
+        Name
+      </th>
+      <td mat-cell *matCellDef="let element">{{ element.name }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="city">
+      <th
+        mat-header-cell
+        *matHeaderCellDef
+        mat-sort-header
+        sortActionDescription="city"
+        class="a"
+      >
+        city
+      </th>
+      <td mat-cell *matCellDef="let element">{{ element.city ? element.city :'Not Set'}}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="accounts">
+      <th
+        mat-header-cell
+        *matHeaderCellDef
+        mat-sort-header
+        sortActionDescription="accounts"
+      >
+        accounts
+      </th>
+      <td mat-cell *matCellDef="let element">{{ element.accounts }}</td>
+    </ng-container>
+    <ng-container matColumnDef="clients">
+      <th
+        mat-header-cell
+        *matHeaderCellDef
+        mat-sort-header
+        sortActionDescription="clients"
+      >
+        clients
+      </th>
+      <td mat-cell *matCellDef="let element">{{ element.clients }}</td>
+    </ng-container>
+    <ng-container matColumnDef="collaborators">
+      <th
+        mat-header-cell
+        *matHeaderCellDef
+        mat-sort-header
+        sortActionDescription="collaborators"
+      >
+        collaborators
+      </th>
+      <td mat-cell *matCellDef="let element">{{ element.collaborators }}</td>
+    </ng-container>
+    <ng-container matColumnDef="contacts">
+      <th
+        mat-header-cell
+        *matHeaderCellDef
+        mat-sort-header
+        sortActionDescription="contacts"
+      >
+        contacts
+      </th>
+      <td mat-cell *matCellDef="let element">{{ element.contacts }}</td>
+    </ng-container>
+    <ng-container matColumnDef="countryCode">
+      <th
+       mat-header-cell
+        *matHeaderCellDef
+        mat-sort-header
+        sortActionDescription="countryCode"
+      >
+        countryCode
+      </th>
+      <td mat-cell *matCellDef="let element">{{ element.countryCode ? element.countryCode:'Not Set' }}</td>
+    </ng-container>
+    <ng-container matColumnDef="website">
+      <th
+        mat-header-cell
+        *matHeaderCellDef
+        mat-sort-header
+        sortActionDescription="website"
+      >
+        website
+      </th>
+      <td mat-cell *matCellDef="let element">{{ element.website ? element.website  : 'Not Set'}}</td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+  </table>
+
+  </div>
+
+  </div>
+    <!-- <router-outlet></router-outlet> -->
+=======
+<div class="header">
+<h1>People</h1>
+<nav class="stroke">
+  <ul>
+    <li><a routerLink="/companylist" routerLinkActive="/companylist">Companies</a></li>
+    <li><a routerLink="/people">People</a></li>
+    <li><a routerLink="/">Teams </a></li>
+    <li><a routerLink="/">Statuses</a></li>
+  </ul>
+</nav>
+</div>
+<div>
+  <div class="flex">
+    <h1>Companies</h1>
+    <div>
+      <!-- <button
+  mat-raised-button
+>
+<mat-icon>grid_on</mat-icon>
+Table
+</button> -->
+      <button mat-button [matMenuTriggerFor]="menu">
+        <mat-icon>table_chart</mat-icon>
+        Table
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+          <button mat-raised-button>
+            <mat-icon>table_chart</mat-icon>
+            Table
+          </button>
+        </button>
+        <button mat-menu-item>
+          <button mat-raised-button>
+            <mat-icon>grid_on</mat-icon>
+            Grid
+          </button>
+        </button>
+      </mat-menu>
+      <button mat-icon-button>
+        <mat-icon>filter_list</mat-icon>
+      </button>
+      <button mat-raised-button color="primary" (click)="openDialog()">
+        <mat-icon>add</mat-icon>Add Company
+      </button>
+    </div>
+  </div>
+  <input type="search" class="inputfield" placeholder="Search" />
+  &nbsp;
+  <small>String with <a href="">any character</a></small>
+
+  <br /><br />
+
+  <!-- <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 demo-table">
+
+  <ng-container matColumnDef="name">
+    <th mat-header-cell *matHeaderCellDef> Name </th>
+    <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="city">
+    <th mat-header-cell *matHeaderCellDef> Address </th>
+    <td mat-cell *matCellDef="let element"> {{element.city+" "+element.state}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="accounts">
+    <th mat-header-cell *matHeaderCellDef> Accounts </th>
+    <td mat-cell *matCellDef="let element"> {{element.accounts}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="clients">
+    <th mat-header-cell *matHeaderCellDef> Clients </th>
+    <td mat-cell *matCellDef="let element"> {{element.clients}} </td>
+  </ng-container>
+  <ng-container matColumnDef="collaborators">
+    <th mat-header-cell *matHeaderCellDef> Collaborators </th>
+    <td mat-cell *matCellDef="let element"> {{element.collaborators}} </td>
+  </ng-container>
+  <ng-container matColumnDef="contacts">
+    <th mat-header-cell *matHeaderCellDef> Contacts </th>
+    <td mat-cell *matCellDef="let element"> {{element.contacts}} </td>
+  </ng-container>
+  <ng-container matColumnDef="countryCode">
+    <th mat-header-cell *matHeaderCellDef> CountryCode </th>
+    <td mat-cell *matCellDef="let element"> {{element.countryCode}} </td>
+  </ng-container>
+  <ng-container matColumnDef="website">
+    <th mat-header-cell *matHeaderCellDef> Website </th>
+    <td mat-cell *matCellDef="let element"><a href="">{{element.website}}</a></td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table> -->
+
+
+
+<div class="example-table-container">
+  <table
+  mat-table
+  [dataSource]="dataSources"
+  matSort
+  (matSortChange)="announceSortChange($event)"
+  class="mat-elevation-z8"  >
+  <ng-container matColumnDef="name" >
+    <th
+      mat-header-cell  
+      *matHeaderCellDef 
+      mat-sort-header
+      sortActionDescription="name"
+    >
+      Name
+    </th>
+    <td mat-cell *matCellDef="let element">{{ element.name }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="city">
+    <th
+      mat-header-cell 
+      *matHeaderCellDef 
+      mat-sort-header
+      sortActionDescription="city"
+      class="a"
+    >
+      city
+    </th>
+    <td mat-cell *matCellDef="let element">{{ element.city ? element.city :'Not Set'}}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="accounts">
+    <th
+      mat-header-cell 
+      *matHeaderCellDef 
+      mat-sort-header
+      sortActionDescription="accounts"
+    >
+      accounts
+    </th>
+    <td mat-cell *matCellDef="let element">{{ element.accounts }}</td>
+  </ng-container>
+  <ng-container matColumnDef="clients">
+    <th
+      mat-header-cell 
+      *matHeaderCellDef 
+      mat-sort-header
+      sortActionDescription="clients"
+    >
+      clients
+    </th>
+    <td mat-cell *matCellDef="let element">{{ element.clients }}</td>
+  </ng-container>
+  <ng-container matColumnDef="collaborators">
+    <th
+      mat-header-cell 
+      *matHeaderCellDef 
+      mat-sort-header
+      sortActionDescription="collaborators"
+    >
+      collaborators
+    </th>
+    <td mat-cell *matCellDef="let element">{{ element.collaborators }}</td>
+  </ng-container>
+  <ng-container matColumnDef="contacts">
+    <th
+      mat-header-cell 
+      *matHeaderCellDef 
+      mat-sort-header
+      sortActionDescription="contacts"
+    >
+      contacts
+    </th>
+    <td mat-cell *matCellDef="let element">{{ element.contacts }}</td>
+  </ng-container>
+  <ng-container matColumnDef="countryCode">
+    <th
+     mat-header-cell 
+      *matHeaderCellDef 
+      mat-sort-header
+      sortActionDescription="countryCode"
+    >
+      countryCode
+    </th>
+    <td mat-cell *matCellDef="let element">{{ element.countryCode ? element.countryCode:'Not Set' }}</td>
+  </ng-container>
+  <ng-container matColumnDef="website">
+    <th
+      mat-header-cell 
+      *matHeaderCellDef 
+      mat-sort-header
+      sortActionDescription="website"
+    >
+      website
+    </th>
+    <td mat-cell *matCellDef="let element">{{ element.website ? element.website  : 'Not Set'}}</td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+</table>
+
+</div>
+ 
+</div>
+<!-- <router-outlet></router-outlet> -->
+>>>>>>> 5679b09e975111cb505b32978a6059248de805f6

@@ -1,0 +1,57 @@
+<div class="header">
+  <h1>Home </h1>
+
+  <mat-button-toggle-group name="favoriteColor" aria-label="Favorite Color" class="btoggel">
+    <mat-button-toggle value="mywork" class="tcolor" routerLink="/worklist" checked>My Work</mat-button-toggle >
+    <mat-button-toggle value="project" class="tcolor" routerLink="/projectlist">My Projects</mat-button-toggle>
+    <mat-button-toggle value="activity" class="tcolor">Activity</mat-button-toggle>
+
+    <mat-button-toggle value="table" class="tcolor" [matMenuTriggerFor]="menu" checked>More
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item value="inbox">Inbox</button>
+        <button mat-menu-item value="dashboard" checked routerLink="">Dashboard</button>
+        <button mat-menu-item value="events">Events</button>
+
+      </mat-menu></mat-button-toggle>
+  </mat-button-toggle-group>
+  </div>
+
+<div class="main">
+  <div class="container">
+    <div class="heading">
+      <h1>Dashboard</h1>
+      <h2>></h2>
+      <h2>Personal</h2>
+    </div>
+    <div class="dashbtn">
+      <button mat-raised-button (click)="openDialogEdit()"><mat-icon>edit</mat-icon> Edit</button>
+      <button mat-raised-button color="primary" (click)="openDialog()">
+        <mat-icon>add</mat-icon> Add Dashboard
+      </button>
+      <button mat-icon-button
+      [matMenuTriggerFor]="menu"><mat-icon>more_horiz</mat-icon></button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item (click)="openDialogEdit()">Make a Copy</button>
+        <button mat-menu-item>Delete</button>
+      </mat-menu>
+    </div>
+  </div>
+
+  <mat-accordion opened>
+    <mat-expansion-panel
+      (opened)="panelOpenState = true"
+      (closed)="panelOpenState = false"
+    >
+      <mat-expansion-panel-header>
+        <mat-panel-title> Metrics </mat-panel-title>
+      </mat-expansion-panel-header>
+
+      <div class="dash-img">
+        <!-- <img
+          src="../../../assets/images/dashboard-img.jpg.png"
+          alt="Toshal Infotech"
+        /> -->
+      </div>
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>

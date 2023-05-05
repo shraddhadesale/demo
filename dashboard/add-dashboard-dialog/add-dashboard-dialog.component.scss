@@ -1,0 +1,25 @@
+.example-full-width {
+  width: 100%;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 16px;
+  row-gap: 16px;
+}
+
+.card-img {
+  text-align: center;
+}
+
+.icon-display {
+  font-size: 100px;
+  height: 100px;
+  width: 100px;
+}
+.close-btn {
+  float: left;
+}
+.add-btn {
+  float: right;
+}

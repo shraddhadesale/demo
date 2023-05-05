@@ -1,0 +1,115 @@
+<h2 mat-dialog-title>
+  Add Dashboard
+  <button
+    mat-icon-button
+    style="float: right; margin: 10px 5px"
+    mat-dialog-close
+  >
+    <mat-icon>close</mat-icon>
+  </button>
+</h2>
+
+<mat-dialog-content>
+  <h4>Give your dashboard a title</h4>
+  <mat-form-field appearance="fill" class="example-full-width">
+    <mat-label>Personal</mat-label>
+    <mat-select>
+      <mat-option value="one">Personal</mat-option>
+      <mat-option value="two">Personal option</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <h4>
+    Why not choose one of these quick templates or else build your own view.
+    Don't worry you can make changes any time.
+  </h4>
+
+  <div class="card-container">
+    <div>
+      <mat-card>
+        <mat-card-content>
+          <!-- <mat-icon>account_circle</mat-icon> -->
+          <div class="card-img">
+            <!-- <img
+              mat-card-md-image
+              src="https://w7.pngwing.com/pngs/419/473/png-transparent-computer-icons-user-profile-login-user-heroes-sphere-black-thumbnail.png"
+              alt="Image of a Shiba Inu"
+            /> -->
+            <mat-icon class="icon-display">account_circle</mat-icon>
+            <h3>Perrsonal</h3>
+            <span>
+              Show me all my active tasks, upcoming milestones, logged time and
+              upcoming events
+            </span>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div>
+      <mat-card>
+        <mat-card-content>
+          <div class="card-img">
+            <!-- <img
+              mat-card-md-image
+              src="https://w7.pngwing.com/pngs/419/473/png-transparent-computer-icons-user-profile-login-user-heroes-sphere-black-thumbnail.png"
+              alt="Image of a Shiba Inu"
+            /> -->
+            <mat-icon class="icon-display">stars</mat-icon>
+            <h3>Starred</h3>
+            <span>
+              Show me counts for all tasks, milestones and time on my starred
+              projects
+            </span>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+    <div>
+      <mat-card>
+        <mat-card-content>
+          <!-- <mat-icon>account_circle</mat-icon> -->
+          <div class="card-img">
+            <!-- <img
+            mat-card-md-image
+            src="https://w7.pngwing.com/pngs/419/473/png-transparent-computer-icons-user-profile-login-user-heroes-sphere-black-thumbnail.png"
+            alt="Image of a Shiba Inu"
+          /> -->
+            <mat-icon class="icon-display">developer_board</mat-icon>
+            <h3>Perrsonal</h3>
+            <span>
+              Show me all my active tasks, upcoming milestones, logged time and
+              upcoming events
+            </span>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div>
+      <mat-card>
+        <mat-card-content>
+          <div class="card-img">
+            <!-- <img
+            mat-card-md-image
+            src="https://w7.pngwing.com/pngs/419/473/png-transparent-computer-icons-user-profile-login-user-heroes-sphere-black-thumbnail.png"
+            alt="Image of a Shiba Inu"
+          /> -->
+            <mat-icon class="icon-display">build</mat-icon>
+            <h3>Perrsonal</h3>
+            <span>
+              Show me all my active tasks, upcoming milestones, logged time and
+              upcoming events
+            </span>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+
+  <br />
+  <div>
+    <button mat-raised-button mat-dialog-close class="close-btn">Close</button>
+    <button mat-raised-button mat-dialog-close color="primary" class="add-btn">
+      <mat-icon>add</mat-icon> Add Dashboard
+    </button>
+  </div>
+</mat-dialog-content>
